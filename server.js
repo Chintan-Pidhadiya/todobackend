@@ -9,6 +9,8 @@ app.use(express.json());
 
 app.use("/v1", route);
 
+module.exports = app;
+
 connectDB();
 app.listen(8001, () => {
   console.log("Server started on port 8001");
